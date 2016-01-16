@@ -1,0 +1,61 @@
+@import "normalize";
+@import "../bower_components/susy/sass/susy";
+@import "../bower_components/breakpoint-sass/stylesheets/breakpoint";
+
+$desktop-width: 750px;
+$white: #FFFFFF;
+
+$susy: (
+  columns: 12, 
+  container: 750px,
+  gutters: 0.25,
+  global-box-sizing: border-box,
+  );
+
+.navbar, .navbar-content, .social-media, .nav-links {
+  height: 123px
+}
+.navbar {
+  background-color: #4b9884;
+}
+.navbar-content {
+  @include container;
+  margin: 0 auto;
+  height: 123px;
+}
+.social-media {
+  @include span(1 at 1 of 3);
+  padding-top: 48px; // TODO: find a better way to vertically center this content!
+  .twitter, .linkedin, .facebook {
+    display: inline;
+    margin: 5px;
+  }
+}
+.logo {
+  @include span(1 at 2 of 3);
+  padding-top: 11px;
+}
+.nav-links {
+  display: inline-block;
+  @include span(1 last of 3);
+  .alumni, .events {
+    color: $white;
+    margin-top: 52px;
+    display: inline-block;
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+    font-size: 17px;
+    width: 100px;
+    span {
+      border-bottom: solid 1px $white;
+      padding-bottom: 7px;
+      border-top: solid 1px $white;
+      padding-top: 7px;
+    }
+  }
+}
+
+// Index page - TODO: think about extracting this into its own file
+.main {
+  width: $desktop-width
+}
