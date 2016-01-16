@@ -1,0 +1,21 @@
+{
+  "name": "HelloDevs",
+  "description": "",
+  "main": "",
+  "authors": [
+    "ImJessW <ImJessW@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/imjessw/HelloDevs",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "gulp": "~3.9.0"
+  }
+}
