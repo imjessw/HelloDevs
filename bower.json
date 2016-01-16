@@ -16,6 +16,7 @@
     "tests"
   ],
   "dependencies": {
-    "gulp": "~3.9.0"
+    "gulp": "~3.9.0",
+    "susy": "~2.2.11"
   }
 }
